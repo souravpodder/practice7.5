@@ -5,10 +5,209 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Practice 7.5</title>
+
+  <script src="https://kit.fontawesome.com/fdb0a38d45.js" crossorigin="anonymous"></script>
+
+  <style>
+    /* .box{
+      border: 1px solid red;
+      width: 200px;
+    } */
+
+    *{
+      margin: 5px;
+    }
+    .center{
+      text-align: center;
+    }
+    #water{
+      position: relative;
+      /* top: 75px; */
+      bottom: 75px;
+
+    }
+    #ring{
+      position: relative;
+      z-index: 1;
+    }
+    #boy{
+      position: relative;
+      top: 75px;
+      z-index: 2;
+    }
+
+    table{
+      border-collapse: collapse;
+    }
+
+    td, th{
+      border: 1px solid;
+      padding: 5px 15px;
+    }
+
+    table tr:nth-child(even){
+      background-color: rgb(170, 219, 214);
+    }
+
+    tr:hover{
+      background-color: rgb(97, 50, 205);
+      color: purple;
+    }
+
+    
+
+    th{
+      background-color: seagreen;
+      color: white;
+    }
+
+    fab{
+      padding: 0 10px;
+      font-size: 48px;
+    }
+
+    .list-p{
+      color: blueviolet;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    ol>li{
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #semantic-txt{
+      padding: 10px 40px;
+      border: 2px dashed tomato;
+      background-color: rgb(171, 202, 236);
+      color: rgb(158, 0, 145);
+      font-size: 32px;
+      letter-spacing: 1px;
+
+    }
+
+    #my-socials h2{
+      border: 2px solid salmon;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      display: inline-block;
+      padding: 0 20px;
+    }
+  </style>
 </head>
 <body>
-
   
+  <section>
+
+    <p class="list-p">Inline Elements</p>
+  <ol type="i">
+    <li>img</li>
+    <li>span</li>
+    <li>anchor tag</li>
+    <li>em</li>
+    <li>strong</li>
+    <li>video</li>
+    <li>small</li>
+  </ol>
+  <p class="list-p">Block elements</p>
+
+  <ol>
+    <li>div</li>
+    <li>p</li>
+    <li>headers</li>
+    <li>li</li>
+    <li>section</li>
+    <li>nav</li>
+    <li>form</li>
+  </ol>
+
+  <p class="list-p">Inline-block elements</p>
+  <ol>
+    <li>button</li>
+    <li>select</li>
+  </ol>
+  </section>
+
+  <h2>Position Practice Example</h2>
+
+  <div class="box">
+    <img id="boy" src="images/boy.svg" alt="">
+  </div>
+  <div class="box">
+    <img id="ring" src="images/ring.svg" alt="">
+  </div>
+  <div class="box">
+    <img id="water" src="images/water.svg" alt="">
+  </div>
+
+  <h2>My Friend list</h2>
+
+  <table class="freinds">
+
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Lives in</th>
+        <th>Birth date</th>
+        <th>treat restaurant</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>sakib</td>
+        <td>Barisal</td>
+        <td>12 Dec</td>
+        <td>restaurant1</td>
+      </tr>
+      <tr>
+        <td>Ashik</td>
+        <td>Australia</td>
+        <td>14 Nov</td>
+        <td>restaurant2</td>
+      </tr>
+      <tr>
+        <td>Sonet</td>
+        <td>Gopalganj</td>
+        <td>3 Feb</td>
+        <td>restaurant3</td>
+      </tr>
+      <tr>
+        <td>Hriday</td>
+        <td>Dhaka</td>
+        <td>20 Nov</td>
+        <td>restaurant4</td>
+      </tr>
+      <tr>
+        <td>Ripon</td>
+        <td>Barisal</td>
+        <td>12 Jan</td>
+        <td>restaurant5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section class="semantic-tag">
+
+    <h2 class="center">Semantic tag</h2>
+    <p id="semantic-txt">semantic tags are meaningful tags. By looking at theese tags we get to understand what the content of that tag is about .semantic tags helps us understand the codes well. semantic tags were first introduced in html5. Ex: section, nav, article, aside, footer</p>
+
+
+  </section>
+
+  <h2>video</h2>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/3OQUR9ozXsk?autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+  <section id="my-socials">
+    <h2>Explore me on social medias</h2><br>
+
+    <a href="https://www.facebook.com/souravpoddersub/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+    <a href="https://www.youtube.com/channel/UCStj-ORBZ7TGK1FwtGAUgbQ" target="_blank"><i class="fab fa-youtube"></i></i></a>
+  </section>
+
+
+
+
   
 </body>
 </html>
